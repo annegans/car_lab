@@ -1,6 +1,7 @@
-function Car(make, model, year, color, off){
+function Car(make, model, year, color){
   this.year = year;
-  this.state = 'off'; 
+  this.state = 'off';
+  this.previousOwners = []; 
 }
 
 

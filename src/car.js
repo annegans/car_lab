@@ -19,7 +19,6 @@ Car.prototype.paint = function(newColor){
 this.color = newColor; 
 
 };
-
 Car.prototype.start = function() {
 this.state  = "on";
 };
@@ -30,5 +29,10 @@ this.state = "off";
 
 Car.prototype.pickUp = function(passenger) {
 this.passengers.push(passenger);
+
+if (this.state === "on") { myCar.pickUp = "john"
+
+}
+
 }
 module.exports=Car;

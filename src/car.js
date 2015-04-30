@@ -27,12 +27,22 @@ Car.prototype.off = function() {
 this.state = "off";
 };
 
-Car.prototype.pickUp = function(passenger) {
-this.passengers.push(passenger);
-
-if (this.state === "on") { myCar.pickUp = "john"
-
+Car.prototype.pickUp = function(passengerName) {
+ if (this.state === "on") {
+   this.passengers.push(passengerName);
+ }
 }
 
+/*Car.prototype.dropOff = function()
+if (this.state === "on") {
+  this.passengers = []; 
+  }
+}*/
+
+Car.prototype.dropOff = function() {
+ if (this.state === "on") {
+     this.passengers = [];
+   } 
 }
+
 module.exports=Car;

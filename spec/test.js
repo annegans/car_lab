@@ -81,7 +81,7 @@ describe('Car', function(){
       expect(myCar.passengers[0]).to.equal("john");
     });
 
-    xit('should only modify passengers array if car is on', function(){
+    it('should only modify passengers array if car is on', function(){
       // myCar.off();
       myCar.pickUp("john");
       expect(myCar.passengers[0]).to.be.empty;
@@ -89,14 +89,14 @@ describe('Car', function(){
   });
 
   describe('#dropOff', function(){
-    xit('should remove passenger from the passengers array', function(){
+    it('should remove passenger from the passengers array', function(){
       myCar.start();
       myCar.pickUp("john");
       myCar.dropOff("john");
       expect(myCar.passengers).to.be.empty;
     });
 
-    xit('should leave passenger in the passengers array if car is off', function(){
+    it('should leave passenger in the passengers array if car is off', function(){
       myCar.start();
       myCar.pickUp("john");
       myCar.off();
